@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C29365F4236E8519006B3733 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29365F3236E8519006B3733 /* main.cpp */; };
+		C29365F4236E8519006B3733 /* LinkedBagClient340.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29365F3236E8519006B3733 /* LinkedBagClient340.cpp */; };
+		C29365FC236E859E006B3733 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29365FB236E859E006B3733 /* Node.cpp */; };
+		C29365FF236E85BE006B3733 /* LinkedBag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29365FD236E85BE006B3733 /* LinkedBag.cpp */; };
+		C2936603236E86E7006B3733 /* LinkedBag340.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2936602236E86E7006B3733 /* LinkedBag340.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,14 @@
 
 /* Begin PBXFileReference section */
 		C29365F0236E8519006B3733 /* PartC_SmartPointers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PartC_SmartPointers; sourceTree = BUILT_PRODUCTS_DIR; };
-		C29365F3236E8519006B3733 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C29365F3236E8519006B3733 /* LinkedBagClient340.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedBagClient340.cpp; sourceTree = "<group>"; };
+		C29365FA236E8566006B3733 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		C29365FB236E859E006B3733 /* Node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		C29365FD236E85BE006B3733 /* LinkedBag.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedBag.cpp; sourceTree = "<group>"; };
+		C29365FE236E85BE006B3733 /* LinkedBag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedBag.h; sourceTree = "<group>"; };
+		C2936600236E8696006B3733 /* BagInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BagInterface.h; sourceTree = "<group>"; };
+		C2936601236E86C3006B3733 /* Include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Include.h; sourceTree = "<group>"; };
+		C2936602236E86E7006B3733 /* LinkedBag340.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedBag340.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,14 @@
 		C29365F2236E8519006B3733 /* PartC_SmartPointers */ = {
 			isa = PBXGroup;
 			children = (
-				C29365F3236E8519006B3733 /* main.cpp */,
+				C29365F3236E8519006B3733 /* LinkedBagClient340.cpp */,
+				C29365FA236E8566006B3733 /* Node.h */,
+				C29365FB236E859E006B3733 /* Node.cpp */,
+				C29365FE236E85BE006B3733 /* LinkedBag.h */,
+				C29365FD236E85BE006B3733 /* LinkedBag.cpp */,
+				C2936600236E8696006B3733 /* BagInterface.h */,
+				C2936601236E86C3006B3733 /* Include.h */,
+				C2936602236E86E7006B3733 /* LinkedBag340.cpp */,
 			);
 			path = PartC_SmartPointers;
 			sourceTree = "<group>";
@@ -118,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C29365F4236E8519006B3733 /* main.cpp in Sources */,
+				C29365F4236E8519006B3733 /* LinkedBagClient340.cpp in Sources */,
+				C2936603236E86E7006B3733 /* LinkedBag340.cpp in Sources */,
+				C29365FC236E859E006B3733 /* Node.cpp in Sources */,
+				C29365FF236E85BE006B3733 /* LinkedBag.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +259,7 @@
 		C29365F8236E8519006B3733 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -247,6 +268,7 @@
 		C29365F9236E8519006B3733 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
